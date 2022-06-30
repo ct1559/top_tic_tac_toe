@@ -1,3 +1,4 @@
+# Board creates and updates the game board
 require_relative "display.rb"
 
 class Board
@@ -9,7 +10,7 @@ class Board
     @game_board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   end
 
-  def update_board(positon, mark)
+  def update_board(position, mark)
     @game_board[@game_board.index(position)] = mark
   end
 
